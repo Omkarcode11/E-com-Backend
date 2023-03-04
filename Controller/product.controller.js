@@ -27,7 +27,7 @@ const addProducts = async (req, res) => {
     let products = req.body;
 
     let product = await db.product.bulkCreate(products.product);
-    let category = await db.category.findByPk(1);
+    let category = await db.category.findByPk(products.categoryId);
     await category.addProducts(product);
     res.status(200).json({ success: "products added successfully" });
     res.end();
@@ -38,7 +38,7 @@ const addProducts = async (req, res) => {
 };
 
 const getAllProduct = async (req, res) => {
-  let allProduct = await db.product.findAll(products.categoryId);
+  let allProduct = await db.product.findAll();
   res.status(200).json(allProduct);
   res.end();
 };
