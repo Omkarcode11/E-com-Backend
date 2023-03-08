@@ -4,9 +4,9 @@ let app = express();
 let bodyParser = require('body-parser');
 let db = require('./model/index');
 let router = require('./routes/index');
-const serverConfig = require('./config/server.confg');
+const serverConfig = require('./config/server.config');
 
-db.connection.sync({alert:true})
+db.connection.sync({ alert: true })
 
 app.use(cors())
 app.use(bodyParser.json());
@@ -17,5 +17,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(serverConfig.PORT, () => {
-  console.log('server is running on omakr 8008....');
+  console.log('server is running on omkar 8008....' + serverConfig.DB );
 });
