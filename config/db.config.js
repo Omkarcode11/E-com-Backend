@@ -1,4 +1,3 @@
-const dbConfig = require('./server.config')
 const developmentInstance = {
   DB: "rajdhani",
   USER: "root",
@@ -14,12 +13,12 @@ const developmentInstance = {
   },
 };
 const productionInstance = {
-  DB: dbConfig.DB,
-  USER: dbConfig.USER,
-  PASSWORD: dbConfig.PASSWORD,
-  DIALECT: dbConfig.DIALECT,
-  HOST: dbConfig.HOST,
-  PORT: dbConfig.PORT,
+  DB: process.env.DB,
+  USER: process.env.USER,
+  PASSWORD: process.env.PASSWORD,
+  DIALECT: process.env.DIALECT,
+  HOST: process.env.HOST,
+  PORT: process.env.PORT,
 };
 
 module.exports = {
