@@ -17,5 +17,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(serverConfig.SERVER_PORT, () => {
-  console.log('server is running on omkar 8008....' + serverConfig.DB );
+  console.log('server is running on omkar 8008....');
 });
