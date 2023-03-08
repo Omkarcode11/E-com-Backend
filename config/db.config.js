@@ -1,4 +1,3 @@
-const serverConfg = require('./server.config');
 const dbConfig = require('./server.config')
 const developmentInstance = {
   DB: "rajdhani",
@@ -15,12 +14,12 @@ const developmentInstance = {
   },
 };
 const productionInstance = {
-  DB: serverConfg.DB,
-  USER: serverConfg.USER,
-  PASSWORD: "q9JQQaDpVU",
-  DIALECT: "mysql",
-  HOST: "sql12.freesqldatabase.com",
-  PORT: 3306,
+  DB: dbConfig.DB,
+  USER: dbConfig.USER,
+  PASSWORD: dbConfig.PASSWORD,
+  DIALECT: dbConfig.DIALECT,
+  HOST: dbConfig.HOST,
+  PORT: dbConfig.PORT,
 };
 
 module.exports = {
