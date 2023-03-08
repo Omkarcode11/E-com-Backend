@@ -1,10 +1,10 @@
+const serverConfig = require('./config/server.config');
 let express = require('express');
 let cors = require('cors')
 let app = express();
 let bodyParser = require('body-parser');
 let db = require('./model/index');
 let router = require('./routes/index');
-const serverConfig = require('./config/server.config');
 
 db.connection.sync({ alert: true })
 
@@ -16,6 +16,6 @@ app.get('/', (req, res) => {
   res.end();
 });
 
-app.listen(serverConfig.PORT, () => {
+app.listen(serverConfig.SERVER_PORT, () => {
   console.log('server is running on omkar 8008....' + serverConfig.DB );
 });

@@ -1,6 +1,6 @@
-if(process.env.NODE == "production"){
+// if(process.env.NODE = "production"){
     require('dotenv').config()
-}
+
 
 module.exports = {
     PORT : process.env.PORT,
@@ -9,4 +9,5 @@ module.exports = {
     DIALECT : process.env.DIALECT,
     PASSWORD : process.env.PASSWORD,
     USER : process.env.USER,
+    SERVER_PORT :process.env.SERVER_PORT
 }
