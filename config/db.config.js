@@ -13,9 +13,9 @@
 //   },
 // };
 const developmentInstance = {
-  DB: "sql12601137",
-  USER: "sql12601137",
-  PASSWORD: "q9JQQaDpVU",
+  DB: "sql12604149",
+  USER: "sql12604149",
+  PASSWORD: "Ti49e4w4LX",
   DIALECT: "mysql",
   HOST: "sql12.freesqldatabase.com",
   PORT: 3306,
@@ -26,6 +26,6 @@ module.exports = {
   // production: productionInstance,
 };
 
-// Database user: sql12601137
+// Database user: sql12604149
 // Database password: q9JQQaDpVU
 // Port number: 3306

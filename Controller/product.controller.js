@@ -26,8 +26,8 @@ const addProducts = async(req,res)=>{
   try{
     let products = req.body
     
-    let product = await db.product.bulkCreate(products);
-    let category = await db.category.findByPk(3)
+    let product = await db.product.bulkCreate(products.product);
+    let category = await db.category.findByPk(products.categoryId)
     await category.addProducts(product)
     res.status(200).json({success:"products added successfully"})
     res.end()
