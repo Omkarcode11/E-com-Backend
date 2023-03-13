@@ -1,18 +1,12 @@
-// const productionInstance = {
-//   DB: "rajdhani",
-//   USER: "root",
-//   PASSWORD: "omkar",
-//   DIALECT: "mysql",
-//   HOST: "localhost",
-//   PORT: 3306,
-//   POOL: {
-//     max: 5,
-//     min: 0,
-//     acquire: 30000,
-//     idle: 10000,
-//   },
-// };
 const developmentInstance = {
+  DB: "rajdhani",
+  USER: "root",
+  PASSWORD: "omkar",
+  DIALECT: "mysql",
+  HOST: "localhost",
+  PORT: 3306,
+};
+const productionInstance = {
   DB: "sql12604149",
   USER: "sql12604149",
   PASSWORD: "Ti49e4w4LX",
@@ -23,7 +17,7 @@ const developmentInstance = {
 
 module.exports = {
   development: developmentInstance,
-  // production: productionInstance,
+  production: productionInstance,
 };
 
 // Database user: sql12604149
